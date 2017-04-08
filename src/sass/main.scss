@@ -1,6 +1,7 @@
 * {
    box-sizing: border-box;
    list-style-type: none;
+   text-decoration: none;
    padding: 0;
    margin: 0;
 }
@@ -18,7 +19,6 @@ nav {
     float: right;
     overflow: auto;
     padding: 15px;
-    color: #B9BABB;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: lighter;
@@ -27,21 +27,37 @@ nav {
       display: inline;
       padding-left: 60px;
       border: 1px solid red;
-      span {
-        color: #FDFDFD;
-        padding-left: 10px;
-      }
-
-      .nav-list:hover {
-        transition-property: background;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in-out;
-
-        color: white;
-        background:yellow;
-        transition: 0.5s;
-      }
+      text-decoration: none;
     }
+    .nav-list a {
+      color: #B9BABB;
+    }
+    span a {
+      color: #FDFDFD;
+    }
+    .nav-list:hover {
+      transition-property: background;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
 
+      color: white;
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+  }
+}
+
+.nav2 {
+  padding: 60px 120px;
+
+  .nav2-left {
+    float: left;
+    a {
+      color: #45ACD6;
+    }
+  }
+  .nav2-right {
+    zoom: .1;
+    float: left;
   }
 }
