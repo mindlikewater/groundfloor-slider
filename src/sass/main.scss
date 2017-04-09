@@ -5,6 +5,12 @@
    margin: 0;
 }
 
+.container-main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 nav {
   overflow: auto;
   display: flex;
@@ -58,6 +64,7 @@ nav {
 
 .main-content {
   padding: 0 60px;
+  flex: 1;
 }
 
 .nav2 {
@@ -80,6 +87,9 @@ nav {
   }
 }
 
+.card {
+  margin-bottom: 25px;
+}
 .card-header {
   color: white;
   font-family: "Oswald", sans-serif;
@@ -89,27 +99,59 @@ nav {
   padding: 0;
 }
 
+.grey {
+  background: #EEEEEE;
+}
 .box {
-  position: relative;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 1px solid lightgrey;
   min-width: 122px;
   min-height: 60px;
   height: auto;
   width: auto;
-  background: #EEEEEE;
   .check {
-    position: absolute;
-    padding-left: 55px;
+    padding-left: 70px;
   }
   .icon {
-    padding: 25px 28px 5px;
+    margin-top: -15px;
+    padding-bottom: 5px;
   }
   p {
-    padding: 0 15px 5px;
+    padding: 5px 15px 4px;
+    a:hover {
+      color: black;
+    }
   }
   a:hover {
     color: #2A7B9A;
     text-decoration: none;
   }
+  .percent {
+    color: black;
+    padding-top: 20px;
+    margin-top: 0;
+    background: #FFFFFF;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-box1 {
+  width: 100%;
+  float: left;
+  background: #292B2C;
+  .left img {
+    zoom: 0.51;
+  }
+}
+
+.footer-box2 {
+  width: 100%;
+  color: white;
 }
