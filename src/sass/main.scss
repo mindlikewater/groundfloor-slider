@@ -1,16 +1,21 @@
 * {
    box-sizing: border-box;
    list-style-type: none;
-   text-decoration: none;
    padding: 0;
    margin: 0;
 }
 
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+}
+
 nav {
   overflow: auto;
-  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
   height: 60px;
-  background-color: #313E46;
+  background-color: rgba(49,62,70, 1);
   .nav-left {
     zoom: 0.51;
     float: left;
@@ -18,7 +23,7 @@ nav {
   .nav-right {
     float: right;
     overflow: auto;
-    padding: 15px;
+    padding-top: 10px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: lighter;
@@ -26,23 +31,25 @@ nav {
     ul li {
       display: inline;
       padding-left: 60px;
-      border: 1px solid red;
-      text-decoration: none;
+      // border: 1px solid red;
     }
-    .nav-list a {
+    a {
       color: #B9BABB;
     }
     span a {
       color: #FDFDFD;
     }
-    .nav-list:hover {
-      transition-property: background;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-in-out;
-
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
       color: white;
-      opacity: 0.6;
-      transition: 0.5s;
+      padding: 50px 0px 25px;
+      transition-property: color;
+      transition-timing-function: ease-in;
+      transition-duration: 0.2s;
+    }
+    .notice:hover {
+      color: #0DA5DD;
+      background-color: rgba(49,62,70, 1);
     }
   }
 }
@@ -60,4 +67,8 @@ nav {
     zoom: .1;
     float: left;
   }
+}
+
+.main-content {
+  padding-left: 160px;
 }
