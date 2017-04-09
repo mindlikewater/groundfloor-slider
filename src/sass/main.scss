@@ -84,3 +84,32 @@ nav {
   color: white;
   font-family: "Oswald", sans-serif;
 }
+
+#nopadding {
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  overflow: auto;
+  border: 1px solid lightgrey;
+  min-width: 122px;
+  min-height: 60px;
+  height: auto;
+  width: auto;
+  background: #EEEEEE;
+  .check {
+    position: absolute;
+    padding-left: 55px;
+  }
+  .icon {
+    padding: 25px 28px 5px;
+  }
+  p {
+    padding: 0 15px 5px;
+  }
+  a:hover {
+    color: #2A7B9A;
+    text-decoration: none;
+  }
+}
