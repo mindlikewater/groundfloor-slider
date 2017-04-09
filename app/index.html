@@ -41,116 +41,123 @@
           <h2 class="card-header bg-inverse">LOAN APPLICATION</h2>
           <div class="card-block" id="nopadding">
             <div id="side-nav">
-              <div class="side-nav box grey col-sm-1">
+              <div class="grey box">
                 <img class="check" src="images/asset-33-grncheck.png" alt="check">
-                <img class="icon" src="images/asset-20-address.png" alt="icon">
-                <p><a href="#">Address</a></p>
+                <a href="#"><img class="icon" src="images/asset-20-address.png" alt="icon">
+                <p>Address</a></p>
               </div>
-              <div class="side-nav box grey col-sm-1">
+              <div class="grey box" id="loan">
                 <img class="check" src="images/asset-33-grncheck.png" alt="check">
-                <img class="icon" src="images/asset-21-loan.png" alt="icon">
-                <p><a href="#">Loan</a></p>
+                <a href="#"><img class="icon" src="images/asset-21-loan.png" alt="icon">
+                <p>Loan</a></p>
               </div>
-              <div class="side-nav box grey col-sm-1">
+              <div class="grey box">
                 <img class="check" src="images/asset-33-grncheck.png" alt="check">
-                <img class="icon" src="images/asset-22-property.png" alt="icon">
-                <p><a href="#">Property</a></p>
+                <a href="#"><img class="icon" src="images/asset-22-property.png" alt="icon">
+                <p>Property</a></p>
               </div>
-              <div class="side-nav box grey col-sm-1">
+              <div class="grey box">
                 <img class="check" src="images/asset-33-grncheck.png" alt="check">
-                <img class="icon" src="images/asset-23-entity.png" alt="icon">
-                <p><a href="#">Entity</a></p>
+                <a href="#"><img class="icon" src="images/asset-23-entity.png" alt="icon">
+                <p>Entity</a></p>
               </div>
-              <div class="side-nav box grey col-sm-1">
+              <div class="grey box">
                 <img class="check" src="images/asset-33-grncheck.png" alt="check">
-                <img class="icon" src="images/asset-24-principal.png" alt="icon">
-                <p><a href="#">Principal</a></p>
+                <a href="#"><img class="icon" src="images/asset-24-principal.png" alt="icon">
+                <p>Principal</a></p>
               </div>
-              <div class="side-nav box col-sm-1">
-                <img class="icon percent" src="images/asset-51-blkpercent.png" alt="icon">
-                <p><a class="percent" href="#">Rate</a></p>
+              <div class="box">
+                <a class="percent" href="#"><img class="icon percent" src="images/asset-51-blkpercent.png" alt="icon">
+                <p>Rate</a></p>
               </div>
+            </div>
+            <div class="side-nav-content hide" id="loan-content">
+              <p>Move the slider to set your loan amount and see how the rate and loan details change.</p>
+              <input type="range" min="50000" max="144000" value="93000" step="1000"/>
+
             </div>
           </div>
         </div>
       </div>
       <footer class="bg-inverse">
         <div class="footer-box1">
-          <div class="footer-box1 left">
-            <img src="images/logo.png">
-            <img src="images/icon-fb.png">
-            <img src="images/icon-twitter.png">
-            <img src="images/icon-li.png">
-            <img src="images/icon-ig.png">
-            <img src="images/icon-youtube.png">
-          </div>
-          <div class="footer-box1 center">
-            <div class="col">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
+          <div class="footer-left">
+            <div class="logo">
+              <img src="images/logo.png">
             </div>
-            <div class="col">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
+            <div class="social">
+              <img src="images/icon-fb.png">
+              <img src="images/icon-twitter.png">
+              <img src="images/icon-li.png">
+              <img src="images/icon-ig.png">
+              <img src="images/icon-youtube.png">
             </div>
           </div>
-          <div class="footer-box1 right">
+          <div class="footer-center">
+            <div class="col">
+              <ul class="nav flex-column">
+                <h6>INVEST</h6>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="nav flex-column">
+                <h6>BORROW</h6>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="nav flex-column">
+                <h6>LEARN</h6>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="nav flex-column">
+                <h6>ABOUT</h6>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-right">
             <img src="images/security.png">
             <img src="images/bbb-front.png">
           </div>
@@ -195,9 +202,10 @@
           </p>
         </div>
       </footer>
-
     </div>
-    <script src="js/bundle.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/bundle.js"></script>
   </body>
 </html>
