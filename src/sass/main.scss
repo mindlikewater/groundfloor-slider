@@ -9,10 +9,10 @@ nav {
   overflow: auto;
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 0 20px;
   height: 60px;
-  background-color: rgba(49,62,70, 1);
   .nav-left {
+    padding-top: 5px;
     float: left;
     img {
       zoom: 0.51;
@@ -21,19 +21,19 @@ nav {
   .nav-right {
     float: right;
     overflow: auto;
-    padding-top: 12px;
+    padding-top: 17px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: lighter;
 
     ul li {
       display: inline;
-      padding-left: 60px;
       // border: 1px solid red;
     }
     a {
       color: #B9BABB;
       text-decoration: none !important;
+      padding: 0 25px;
     }
     span a {
       color: #FDFDFD;
@@ -42,7 +42,7 @@ nav {
     a:hover {
       background-color: rgba(255, 255, 255, 0.2);
       color: white;
-      padding: 50px 0px 25px;
+      padding: 50px 25px 25px;
       transition-property: color;
       transition-timing-function: ease-in;
       transition-duration: 0.2s;
@@ -50,21 +50,22 @@ nav {
     }
     .notice:hover {
       color: #0DA5DD;
-      background-color: rgba(49,62,70, 1);
       text-decoration: none !important;
+      background-color: #292B2C;
     }
   }
 }
 
+.main-content {
+  padding: 0 60px;
+}
+
 .nav2 {
-  padding: 60px 60px;
+  padding: 60px 0px 10px;
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  li {
-    display: inline;
-    padding-right: 150px;
-  }
+
   a {
     color: #45ACD6;
   }
@@ -79,6 +80,7 @@ nav {
   }
 }
 
-.main-content {
-  padding-left: 160px;
+.card-header {
+  color: white;
+  font-family: "Oswald", sans-serif;
 }
