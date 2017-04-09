@@ -5,10 +5,6 @@
    margin: 0;
 }
 
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none !important;
-}
-
 nav {
   overflow: auto;
   display: flex;
@@ -17,13 +13,15 @@ nav {
   height: 60px;
   background-color: rgba(49,62,70, 1);
   .nav-left {
-    zoom: 0.51;
     float: left;
+    img {
+      zoom: 0.51;
+    }
   }
   .nav-right {
     float: right;
     overflow: auto;
-    padding-top: 10px;
+    padding-top: 12px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: lighter;
@@ -35,9 +33,11 @@ nav {
     }
     a {
       color: #B9BABB;
+      text-decoration: none !important;
     }
     span a {
       color: #FDFDFD;
+      text-decoration: none !important;
     }
     a:hover {
       background-color: rgba(255, 255, 255, 0.2);
@@ -46,26 +46,36 @@ nav {
       transition-property: color;
       transition-timing-function: ease-in;
       transition-duration: 0.2s;
+      text-decoration: none !important;
     }
     .notice:hover {
       color: #0DA5DD;
       background-color: rgba(49,62,70, 1);
+      text-decoration: none !important;
     }
   }
 }
 
 .nav2 {
-  padding: 60px 120px;
-
-  .nav2-left {
-    float: left;
-    a {
-      color: #45ACD6;
-    }
+  padding: 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  li {
+    display: inline;
+    padding-right: 150px;
   }
-  .nav2-right {
-    zoom: .1;
-    float: left;
+  a {
+    color: #45ACD6;
+  }
+  a:hover {
+    color: #2A7B9A;
+  }
+  img {
+    height: auto;
+    width: auto;
+    max-height: 30px;
+    max-width: 30px;
   }
 }
 
