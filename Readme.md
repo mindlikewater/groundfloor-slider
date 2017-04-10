@@ -5,4 +5,4 @@ This project replicates the Loan Application page of Groundfloor.  The purpose o
 Additional Tools used in this project: Bootstrap.
 
 This project can be found live at:
-[Loan Application page](tiy-mikaelchen-groundfloor.surge.sh).
+[Loan Application page](https://tiy-mikaelchen-groundfloor.surge.sh).
