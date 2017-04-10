@@ -264,5 +264,12 @@ footer {
     color: white;
     text-align: center;
     font-size: 11px;
+    .copyright {
+      padding-bottom: 40px;
+    }
+    p span {
+      color: #456D82;
+      font-size: 14px;
+    }
   }
 }
