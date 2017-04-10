@@ -4,7 +4,9 @@
    padding: 0;
    margin: 0;
 }
-
+.bold {
+  font-weight: bold;
+}
 .container-main {
   display: flex;
   min-height: 100vh;
@@ -35,9 +37,9 @@ nav {
     font-size: 18px;
     font-weight: lighter;
 
+//top navbar menu items
     ul li {
       display: inline;
-      // border: 1px solid red;
     }
     a {
       color: #B9BABB;
@@ -147,19 +149,58 @@ nav {
   }
 }
 
+//hides side-nav-content
 .hide {
   display: none;
 }
 
+//makes side-nav-content visible
 .show {
   width: 805px;
   height: 740px;
+}
+
+.side-nav-content {
+  padding: 30px 80px;
+  font-size: 15px;
+  .range {
+    position: relative;
+    width: 550px;
+    height: 5px;
+    .range input {
+      width: 550px;
+      position: absolute;
+      top: 2px;
+    }
+    .range-labels {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .loan-amt-rate {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    .loanbox {
+      margin: 0 30px;
+    }
+    .ratebox {
+      margin: 0 30px;
+    }
+  }
+}
+
+.card.text-center {
+  margin-top: 30px;
 }
 
 .footer {
   width: 100%;
 }
 
+//this contains site nav map
 .footer-box1 {
   overflow: auto;
   display: flex;
@@ -186,6 +227,7 @@ nav {
   }
 }
 
+//this contains copyright and legal info.
 .footer-box2 {
   padding: 0 60px;
   width: 100%;
