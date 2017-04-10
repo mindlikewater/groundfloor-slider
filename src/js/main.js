@@ -4,7 +4,6 @@ function showContent (event) {
   var loanContent = $("#loan-content");
 
   if (target.id === "loan") {
-    loanContent.addClass("show");
     loanContent.toggleClass("hide");
   }
 };
