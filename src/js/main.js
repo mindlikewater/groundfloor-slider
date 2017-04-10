@@ -10,3 +10,12 @@ function showContent (event) {
 
 var viewContent = $(".box");
 viewContent.click(showContent);
+
+function expandEdit (event) {
+  var loanEdit = $("#loan-edit");
+
+  loanEdit.toggleClass("hide");
+};
+
+var editPropertyDetails = $("#edit-button");
+editPropertyDetails.click(expandEdit);
