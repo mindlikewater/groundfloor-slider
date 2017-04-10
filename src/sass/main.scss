@@ -113,9 +113,6 @@ nav {
   }
 }
 
-.card {
-  margin-bottom: 20px;
-}
 .card-header {
   color: white;
   font-family: $mainfont;
@@ -282,10 +279,21 @@ nav {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: lighter;
+  margin-top: 20px;
+}
+
+.note {
+  padding-top: 30px;
+  font-size: 12px;
 }
 
 .right {
   float: right;
+}
+
+.padding-top {
+  padding-top: 10px;
+  padding-right: 20px;
 }
 
 footer {
