@@ -13,8 +13,10 @@ viewContent.click(showContent);
 
 function expandEdit (event) {
   var loanEdit = $("#loan-edit");
+  var save = $("#save-button");
 
   loanEdit.toggleClass("hide");
+  save.toggleClass("hide");
 };
 
 var editPropertyDetails = $("#edit-button");

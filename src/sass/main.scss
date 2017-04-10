@@ -141,7 +141,7 @@ nav {
   flex-direction: column;
   border: 1px solid lightgrey;
   max-width: 122px;
-  max-height: 150px;
+  height: 150px;
   height: auto;
   width: auto;
   margin: 0;
@@ -267,12 +267,21 @@ nav {
   }
   .btn-warning {
     background: #FF6200;
-    font-family: $mainfont;
     padding: 6px 40px;
     border-radius: 0;
-    font-weight: lighter;
-    font-size: 15px;
   }
+}
+
+.btn-save {
+  background: #FF6200;
+  color: white;
+  font-family: $mainfont;
+  border-radius: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .right {
