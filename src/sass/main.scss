@@ -239,13 +239,21 @@ footer {
     .footer-center {
       display: flex;
       align-items: flex-start;
+      h6 {
+        color: white;
+        font-weight: bold;
+      }
       a {
         color: #BBBBBB;
       }
     }
-    h6 {
-      color: white;
-      font-weight: bold;
+    .footer-right {
+      float: left;
+      clear: both;
+      .security {
+        zoom: 0.71;
+        padding-bottom: 15px;
+      }
     }
   }
 
