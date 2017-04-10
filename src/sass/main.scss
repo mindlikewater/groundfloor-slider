@@ -164,6 +164,10 @@ nav {
   overflow: auto;
   padding: 30px 80px;
   font-size: 15px;
+  button {
+    border: none;
+    outline: none;
+  }
   .range {
     position: relative;
     height: 5px;
@@ -209,6 +213,35 @@ nav {
     font-size: 13px;
     .title {
       font-family: $mainfont;
+    }
+    .button {
+      background: none;
+      border: none;
+      color: #00A1D0;
+      outline: none;
+      padding-bottom: 35px;
+    }
+    .button:hover {
+      text-decoration: underline;
+    }
+  }
+  #loan-edit {
+    padding-top: 20px;
+  }
+  .select {
+    font: inherit;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    padding-right: 60px;
+    border: 1px solid #DDDDDD;
+  }
+  .none {
+    background: white;
+    padding-right: 60px;
+    color: black;
+    .none:hover {
+      background: white;
     }
   }
 }
