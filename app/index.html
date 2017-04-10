@@ -71,60 +71,85 @@
                 <p>Rate</a></p>
               </div>
             </div>
-            <div class="side-nav-content hide" id="loan-content">
+            <div class="side-nav-content width2 height8 hide" id="loan-content">
               <p>Move the slider to set your loan amount and see how the rate and loan details change.</p>
               <div class="range">
                 <div class="range">
                   <input type="range" min="50000" max="144000" step="1000" value="93000" onchange="showValue(this.value)">
-                </div>
-                <div class="range-labels">
-                  <div>$50,000</div>
-                  <div>$144,000</div>
-                </div>
-                <div class="loan-amt-rate">
-                  <div class="loanbox">
-                    <span class="bold" id="display-loan">$93,000</span>
-                    <div>Loan Amount</div>
+                  <div class="range-labels">
+                    <div>$50,000</div>
+                    <div>$144,000</div>
                   </div>
-                  <div class="ratebox">
-                    <span class="bold" id="display-rate">6%</span>
-                    <div>Rate</div>
+                  <div class="loan-amt-rate">
+                    <div class="loanbox">
+                      <span class="bold" id="display-loan">$93,000</span>
+                      <div>Loan Amount</div>
+                    </div>
+                    <div class="ratebox">
+                      <span class="bold" id="display-rate">6%</span>
+                      <div>Rate</div>
+                    </div>
                   </div>
+                  <script type="text/javascript">
+                    function showValue(value){
+                      if (value > 50000) {
+                        document.getElementById("display-rate").innerHTML="5%";
+                      }
+                      if (value > 80000) {
+                        document.getElementById("display-rate").innerHTML="6%";
+                      }
+                      if (value > 110000) {
+                        document.getElementById("display-rate").innerHTML="7%";
+                      }
+                      document.getElementById("display-loan").innerHTML=`$${value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
+                    }
+                  </script>
                 </div>
-                <script type="text/javascript">
-                  function showValue(value){
-                    if (value > 50000) {
-                      document.getElementById("display-rate").innerHTML="5%";
-                    }
-                    if (value > 80000) {
-                      document.getElementById("display-rate").innerHTML="6%";
-                    }
-                    if (value > 110000) {
-                      document.getElementById("display-rate").innerHTML="7%";
-                    }
-                    document.getElementById("display-loan").innerHTML=`$${value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
-                  }
-                </script>
-                <div class="card text-center">
+
+                <div class="card">
                   <div class="card-header">
-                    Featured
+                    LOAN DETAILS
                   </div>
-                  <div class="card-block">
-                    <h4 class="card-title">Special title treatment</h4>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                  <div class="card-footer text-muted">
-                    2 days ago
+                    <div class="card-block width2 height4">
+                      <div class="row">
+                        <div class="col">Loan Amount: </div>
+                        <div class="col bold">$93,000</div>
+                        <div class="col">Loan to ARV: </div>
+                        <div class="col bold">31%</div>
+                        <div class="w-100"></div>
+                        <div class="col">Borrower Contribution (at closing): </div>
+                        <div class="col bold">$67,000</div>
+                        <div class="col">Loan to cost: </div>
+                        <div class="col bold">58%</div>
+                        <div class="w-100"></div>
+                        <div class="col">Grade: </div>
+                        <div class="col bold">A</div>
+                        <div class="col">Points: </div>
+                        <div class="col bold">4%</div>
+                        <div class="w-100"></div>
+                        <div class="col">Rate: </div>
+                        <div class="col bold">6%</div>
+                        <div class="col">Groundfloor costs (rolled into loan): </div>
+                        <div class="col bold">$3,720</div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col title">PROPERTY DETAILS</div>
+                        <div class="col"><span class="bold">Purchase Price: </span>$100,000</div>
+                        <div class="col"><span class="bold">Rehab Amount: </span>$50,000</div>
+                        <div class="col"><span class="bold">ARV: </span>$300,003</div>
+                        <div class="col"><span class="bold">Term: </span>9 months</div>
+                        <div class="col"><a href="#">Edit</a></div>
+                      </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-      <footer class="bg-inverse">
+      <footer class="bg-inverse container-fluid">
         <div class="footer-box1">
           <div class="footer-left">
             <div class="logo">
