@@ -260,6 +260,23 @@ nav {
       background: white;
     }
   }
+  .btn {
+    margin-top: 40px;
+    padding-right: 100px;
+    padding-left: 50px;
+  }
+  .btn-warning {
+    background: #FF6200;
+    font-family: $mainfont;
+    padding: 6px 40px;
+    border-radius: 0;
+    font-weight: lighter;
+    font-size: 15px;
+  }
+}
+
+.right {
+  float: right;
 }
 
 footer {
