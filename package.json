@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-slider": "^9.7.3",
     "jquery": "^3.2.1"
   }
 }
